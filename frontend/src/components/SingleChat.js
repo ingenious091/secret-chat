@@ -18,7 +18,7 @@ import ScrollableChat from "./ScrollableChat";
 import io from "socket.io-client";
 import { TiMessageTyping } from "react-icons/ti";
 
-const ENDPOINT = "http://localhost:5001";
+const ENDPOINT = "https://secret-chat-o1l5.onrender.com";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
