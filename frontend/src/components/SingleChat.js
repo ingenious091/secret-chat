@@ -131,7 +131,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         setMessages([...messages, newMessageRecieved]);
       }
     });
-  });
+  },[socket]);
 
   const typingHandler = (e) => {
     setNewMessage(e.target.value);
