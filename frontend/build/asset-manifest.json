@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cc4644bc.css",
+    "main.js": "/static/js/main.d08f7508.js",
+    "static/media/Altja_jõgi_Lahemaal.jpg.webp": "/static/media/Altja_jõgi_Lahemaal.jpg.43e0992ef7dbe228e664.webp",
+    "index.html": "/index.html",
+    "main.cc4644bc.css.map": "/static/css/main.cc4644bc.css.map",
+    "main.d08f7508.js.map": "/static/js/main.d08f7508.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc4644bc.css",
+    "static/js/main.d08f7508.js"
+  ]
+}
