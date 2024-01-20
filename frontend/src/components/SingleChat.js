@@ -122,7 +122,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       }
     });
 
-  }, []);
+  },[istyping, setIsTyping]);
 
   useEffect(() => {
     fetchMessages();
