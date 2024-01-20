@@ -106,16 +106,6 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
     socket.on("connected", () => setSocketConnected(true));
     socket.on("typing", () => setIsTyping(true));
     socket.on("stop typing", () => setIsTyping(false));
-
-  }, []);
-
-  useEffect(() => {
-    fetchMessages();
-
-    selectedChatCompare = selectedChat;
-  }, [selectedChat]);
-
-  useEffect(() => {
     socket.on("message recieved", (newMessageRecieved) => {
       console.log("message recieved");
       if (
@@ -131,7 +121,15 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         setMessages([...messages, newMessageRecieved]);
       }
     });
- },[istyping, setIsTyping]);
+
+  }, [istyping, setIsTyping]);
+
+  useEffect(() => {
+    fetchMessages();
+
+    selectedChatCompare = selectedChat;
+  }, [selectedChat]);
+
 
   const typingHandler = (e) => {
     setNewMessage(e.target.value);
